@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Евгений Киселев](https://up.htmlacademy.ru/htmlcss/24/user/971931).
-* Наставник: `Александр Бабченко`.(https://htmlacademy.ru/profile/babtshe)
+* Наставник: `Александр Бабченко`.(https://up.htmlacademy.ru/htmlcss/24/user/619357).
 
 ---
 
