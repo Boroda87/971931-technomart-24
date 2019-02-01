@@ -9,11 +9,11 @@
 <body>
   <header class="main-header">
     <a class="main-header-logo">
-      <img src="img/logo.png" class="logo" alt="Техномарт">
+      <img src="img/logo.png" class="logo" alt="логотип магазина Техномарт">
     </a>
-    <!--<form>
-    <input type="text" name="search" value="Поиск">
-  </form> тут будет форма-->
+    <form>
+      <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+    </form>
     <a class="bookmarks" href="#">
       Закладки:0</a>
     <a class="basket" href="#">
@@ -22,12 +22,12 @@
     <h1 class="shop-name">Интернет-магазин строительных материалов
       и инструментов для дома</h1>
     <address class="header-contacts">
-        <a herf="tel:+78125550555">+7(812)555-05-55</a>
-      г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8 
+      <a href="tel:+78125550555" aria-label="контактный телефон и адрес">+7(812)555-05-55</a>
+      г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8
     </address>
     <ul class="user-navigation">
       <li><a class="login-link" href="#">
-        Войти </a></li>
+          Войти </a></li>
       <li><a class="registration-link" href="#">Регистрация
         </a></li>
     </ul>
@@ -44,7 +44,7 @@
     </nav>
   </header>
   <main class="container">
-   <!--Разметим позже <section class="catalog-main">
+    <!--Разметим позже <section class="catalog-main">
       <h2 class="visually-hidden">Основной раздел</h2>
       <ul class="catalog-list">
         <li class="catalog-page">
@@ -185,14 +185,13 @@
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
-      </ul>      
-        <a class="button-about" href="about-us.html">Подробнее о компании</a>
+      </ul>
+      <a class="button-about" href="about-us.html">Подробнее о компании</a>
     </section>
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-      <a href="map.html"><img src="img/map.jpg" 
-        alt="карта офиса по адресу улица большая конюшенная дом 19/8"></a>
+      <a href="map.html"><img src="img/map.jpg" alt="офис находится по адресу улица большая конюшенная дом 19/8"></a>
       <p><a class="button-lost" href="contact-us.html">
           Заблудились? Напишите нам.
         </a>
@@ -205,7 +204,7 @@
     </a>
     <address class="footer-contacts">
       г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8
-      <a herf="tel:+78125550555">+7(812)555-05-55</a>
+      <a href="tel:+78125550555" aria-label="контактный телефон">+7(812)555-05-55</a>
     </address>
     <nav class="footer-navigation">
       <ul class="footer-main-navigation">
@@ -230,12 +229,12 @@
     </p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">
-          Вконтакте</a></li>
-        <li><a class="social-button" href="#">
-          Фейсбук</a></li>
-        <li><a class="social-button" href="#">
-          Инстаграм</a></li>
+          <li><a class="social-button" href="#" aria-label="Вконтакте">
+              Вконтакте</a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук">
+              Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Инстаграм">
+              Инстаграм</a></li>
       </ul>
     </div>
     <p class="feedback">
@@ -247,6 +246,37 @@
       <a href="htmlacademy.ru">htmlacademy.ru</a>
     </p>
   </footer>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Где находимся</h2>
+    <p>
+      <img src="img/map_modal.jpg" width="150" height="100" alt="офис находится по адресу улица большая конюшенная дом 19/8">
+    </p>
+    <button class="modal-map-close" type="button">Закрыть
+    </button>
+  </section>
+  <section class="modal modal-support">
+    <form class="mail-form" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="visually-hidden">Если заблудились,напишите нам</h2>
+      <p>
+        <label>Ваше имя:
+          <input type="text" name="name" class="name-icon-support" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p>
+        <label>Ваш e-mail:
+          <input type="email" class="email-icon-support" name="email" placeholder="email@example.com">
+        </label>
+      </p>
+      <p>
+        <label>Текст письма:
+          <textarea name="textarea" class="textarea-support" rows="5" cols="20" placeholder="В свободной форме">
+          </textarea>
+        </label>
+      </p>
+    </form>
+    <button type="submit" class="support-button-form">Отправить</button>
+    <button type="button" class="modal-support-close" aria-label="Закрыть окно"></button>
+  </section>
 </body>
 
 </html>
