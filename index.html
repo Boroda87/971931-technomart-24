@@ -9,9 +9,9 @@
 <body>
   <header class="main-header">
     <a class="main-header-logo">
-      <img src="img/logo.png" class="logo" alt="логотип магазина Техномарт">
+      <img src="img/logo.svg" width="111" height="18" class="logo" alt="логотип магазина Техномарт">
     </a>
-    <form>
+    <form class="main-search-form" action="https://echo.htmlacademy.ru" method="GET">
       <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
     </form>
     <a class="bookmarks" href="#">
@@ -190,7 +190,7 @@
     </section>
     <section class="contacts">
       <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+      <p>Вы можете забрать товар сами, заехав в наш офис:</p>
       <a href="map.html"><img src="img/map.jpg" alt="офис находится по адресу улица большая конюшенная дом 19/8"></a>
       <p><a class="button-lost" href="contact-us.html">
           Заблудились? Напишите нам.
@@ -200,7 +200,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer-logo">
-      <img src="img/logo.png" class="logo" alt="Техномарт">
+      <img src="img/logo.svg" width="138" height="23" class="logo" alt="Техномарт">
     </a>
     <address class="footer-contacts">
       г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8
@@ -255,7 +255,7 @@
     </button>
   </section>
   <section class="modal modal-support">
-    <form class="mail-form" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="mail-form" action="https://echo.htmlacademy.ru" method="GET">
       <h2 class="visually-hidden">Если заблудились,напишите нам</h2>
       <p>
         <label>Ваше имя:
@@ -273,8 +273,9 @@
           </textarea>
         </label>
       </p>
-    </form>
     <button type="submit" class="support-button-form">Отправить</button>
+    </form>
+    
     <button type="button" class="modal-support-close" aria-label="Закрыть окно"></button>
   </section>
 </body>
