@@ -11,7 +11,7 @@
     <a href="index.html">
       <img src="img/logo.svg" width="110" height="18" class="logo-name" alt="интернет магазин Техномарт">
     </a>
-    <form>
+    <form class="main-search-form" action="https://echo.htmlacademy.ru" method="GET">
       <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
     </form>
     <a class="bookmarks" href="#">
@@ -67,23 +67,23 @@
           <legend>Производители</legend>
           <ul>
             <li class="filter-option">
-              <input type="checkbox" id="filter-bosch" class="visually-hidden" name="bosch"
+              <input type="checkbox" id="filter-bosch" class="visually-hidden" name="manufacturer" value="bosch"
                 checked>
               <label for="filter-bosch">Bosch</label></li>
             <li class="filter-option">
-              <input type="checkbox" id="filter-interscol" class="visually-hidden"
-                name="interscol">
+              <input type="checkbox" id="filter-interscol" class="visually-hidden" name="manufacturer"
+                value="interscol">
               <label for="filter-interscol"> Интерскол</label></li>
             <li class="filter-option">
-              <input type="checkbox" id="filter-makita" class="visually-hidden" name="makita"
+              <input type="checkbox" id="filter-makita" class="visually-hidden" name="manufacturer" value="makita"
                 checked>
               <label for="filter-makita">Makita</label></li>
             <li class="filter-option">
-              <input type="checkbox" id="filter-dewalt" class="visually-hidden" name="dewalt">
+              <input type="checkbox" id="filter-dewalt" class="visually-hidden" name="manufacturer" value="dewalt">
               <label for="filter-dewalt">Dewalt</label></li>
             <li class="filter-option">
-              <input type="checkbox" id="filter-hitachi" class="visually-hidden"
-                name="hitachi">
+              <input type="checkbox" id="filter-hitachi" class="visually-hidden" name="manufacturer"
+                value="hitachi">
               <label for="filter-hitachi">Hitachi</label></li>
           </ul>
         </fieldset>
@@ -91,7 +91,7 @@
           <legend>Питание</legend>
           <ul>
             <li class="filter-option">
-              <input type="radio" class="visually-hidden" id="radio-battery" name="filter-answer"
+              <input type="radio" class="visually-hidden" id="radio-battery" name="power-type"
                 value="battery" checked>
               <label for="radio-battery">Аккумуляторные</label>
             </li>
