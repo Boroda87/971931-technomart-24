@@ -1,0 +1,202 @@
+@font-face{
+    font-family: "Cuprum";
+    src: url('cuprum.woff') format('woff')
+        url('fonts/Cuprum/Cuprum-Regular.ttf') format('ttf'),
+        url('web/Cuprum.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    color: #ffffff;
+    background-color: black;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px; }
+
+ a{
+    text-decoration: none;
+}
+.main-header-top a{
+    color: #ffffff;
+}
+.main-search-form,
+.main-header-top a:hover{
+    background-color: #212a3a;
+}
+.main-header-top img{
+    background-color: #ca2c37;
+}
+.main-header{
+    background-color: #f4f7f9;
+    font-size: 17px;
+    line-height: 17px;
+    color:#ffffff;  
+}
+.main-header-top{
+    background-color: #293449;
+}
+.main-header-logo {
+    width: 220px;
+    height: 47px;
+    padding:13px 55px 11px 55px;
+    background-color:#ee3643 ;
+    color: #ffffff;
+    text-align: center ;
+    vertical-align: middle ;
+}
+
+.shop-name{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.44;
+    text-align: left;
+    color: #ee3643;
+}
+.main-header-contacts{
+
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #32425c;
+  }
+
+.main-header-contacts a{
+
+  font-size: 21px;
+  font-style: italic;
+  line-height: 1.44;
+  text-align: left;
+  color: #ee3643;  
+}
+
+.user-navigation .login-link{
+
+    font-size: 21px;
+    line-height: 1;
+    text-align: left;
+    color: black;
+}
+
+.user-navigation .registration-link{
+
+    font-size: 21px;
+    line-height: 1;
+    text-align: left;
+    color: black;
+}
+
+
+.logistics-list,
+.site-navigation{
+    list-style: none;
+}
+.site-navigation a{
+    color: #ffffff
+}
+
+div .main-navigation{
+
+    background-color: #32425c;
+    color: #ffffff
+}
+
+.about-us{
+    color: #000000;
+    background-color: #ffffff;
+
+}
+h2{
+
+    line-height:30px;
+    text-align: left;
+
+}
+
+.logistics p{
+    font-family: 'PTSans-Regular' ;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+}
+.button-about{
+    width: 220px;
+    height: 38px;
+    padding:12px 40px 10px;
+    background-color:#ee3643 ;
+    color: #ffffff;
+    text-align: center ;
+    vertical-align: middle ;
+
+}
+
+.button-lost {
+    width: 300px;
+    height: 38px;
+    padding: 14px 69px 12px 63px;
+    background-color:#ee3643 ;
+    color: #ffffff;
+    text-align: center ;
+    vertical-align: middle ;
+}
+
+.main-footer{
+background-color:#32425c ;
+}
+
+.main-footer-logo{
+    width: 220px;
+    height: 63px;
+    padding:13px 55px 11px 55px;
+    background-color:#ee3643 ;
+    color: #ffffff;
+    text-align: center ;
+    vertical-align: middle ;
+}
+
+.footer-contacts{
+    width: 322px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: #f3f7f9;
+  
+}
+.main-footer ul{
+    list-style: none ;
+}
+
+.main-footer a{
+    color: #ffffff;
+}
+.developer a,
+.feedback a,
+.footer-items-navigation a{
+    color:#ffd180;
+}
+.footer-copyright{
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+}
+.feedback,
+.developer{
+font-size:16px;
+line-height: 18px;
+}
+
+.modal{
+    display: none;
+}
