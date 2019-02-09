@@ -1,22 +1,14 @@
-@font-face{
-    font-family: "Cuprum";
-    src: url('cuprum.woff') format('woff')
-        url('fonts/Cuprum/Cuprum-Regular.ttf') format('ttf'),
-        url('web/Cuprum.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        
-}
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Cuprum', sans-serif;
+    font-family: "Cuprum", "PT Sans", sans-serif;
     font-size: 17px;
     line-height: 24px;
     font-weight: 400;
     text-transform: none;
     color: #ffffff;
-    background-color: black;
+    background-color: grey;
 }
 .visually-hidden {
     position: absolute;
@@ -27,22 +19,22 @@ body {
 
  a{
     text-decoration: none;
+        color: #ffffff;
 }
-.main-header-top a{
-    color: #ffffff;
+
+input{
+    background-color:transparent ;
+ 
 }
-.main-search-form,
-.main-header-top a:hover{
-    background-color: #212a3a;
-}
-.main-header-top img{
-    background-color: #ca2c37;
+
+.search:focus{
+    background-color: #ffffff;
 }
 .main-header{
     background-color: #f4f7f9;
     font-size: 17px;
     line-height: 17px;
-    color:#ffffff;  
+
 }
 .main-header-top{
     background-color: #293449;
@@ -57,28 +49,27 @@ body {
     vertical-align: middle ;
 }
 
-.shop-name{
+
+h1{
     font-size: 16px;
-    font-style: italic;
-    line-height: 1.44;
+    line-height: 23px;
     text-align: left;
     color: #ee3643;
+    font-style: italic;
 }
-.main-header-contacts{
-
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: center;
+address p{
+  font-size: 14px;
+    line-height: 24px;
     color: #32425c;
+    font-style: normal;
   }
 
-.main-header-contacts a{
+address a{
 
   font-size: 21px;
-  font-style: italic;
-  line-height: 1.44;
-  text-align: left;
+  line-height: 21px;
   color: #ee3643;  
+  font-style: normal;
 }
 
 .user-navigation .login-link{
@@ -95,21 +86,24 @@ body {
     line-height: 1;
     text-align: left;
     color: black;
+
 }
 
+.main-navigation{
+    background-color: #32425c;
+}
 
 .logistics-list,
 .site-navigation{
     list-style: none;
 }
-.site-navigation a{
-    color: #ffffff
+
 }
 
-div .main-navigation{
+.mai-header-nav{
 
     background-color: #32425c;
-    color: #ffffff
+
 }
 
 .about-us{
@@ -118,18 +112,23 @@ div .main-navigation{
 
 }
 h2{
-
+font-size: 30px;
     line-height:30px;
-    text-align: left;
+    font-weight: normal;
+
 
 }
 
-.logistics p{
-    font-family: 'PTSans-Regular' ;
+.about-us p{
+    font-family: "PT Sans", sans-serif ;
     font-size: 13px;
     line-height: 24px;
-    text-align: left;
 }
+.logistics-list li{
+    font-size: 18px;
+    line-height: 20px;
+}
+
 .button-about{
     width: 220px;
     height: 38px;
@@ -140,6 +139,7 @@ h2{
     vertical-align: middle ;
 
 }
+
 
 .button-lost {
     width: 300px;
@@ -166,12 +166,10 @@ background-color:#32425c ;
 }
 
 .footer-contacts{
-    width: 322px;
-    height: 40px;
     font-size: 18px;
-    line-height: 1.33;
-    text-align: left;
+    line-height: 24px;
     color: #f3f7f9;
+    font-style:normal;
   
 }
 .main-footer ul{
@@ -181,22 +179,74 @@ background-color:#32425c ;
 .main-footer a{
     color: #ffffff;
 }
-.developer a,
-.feedback a,
+.footer-bottom{
+    background-color:#293449 ;
+}
+.footer-bottom a,
 .footer-items-navigation a{
-    color:#ffd180;
+    color: #ffd180;
 }
 .footer-copyright{
     font-size: 16px;
-    line-height: 1.13;
-    text-align: left;
+    line-height: 18px;
 }
+
+.footer-social{
+    text-align: center;
+}
+
 .feedback,
 .developer{
 font-size:16px;
 line-height: 18px;
 }
 
-.modal{
-    display: none;
+.footer-social,
+.feedback,
+.developer{
+background-color:#293449 ;
+}
+
+
+/* состояния */
+.user-navigation a:hover{
+    color:#ee3643 ;
+}
+.user-navigation a:active{
+    color:rgba(0, 0, 0, 0.3);
+}
+.site-navigation a:active,
+.main-header-top a:nth-child(n+2):active{
+    color: rgba(255, 255, 255, 0.5)
+}
+.footer-bottom a:hover:not(.social-button),
+footer nav a:hover{
+    text-decoration: underline;
+}
+.footer-bottom a:active{
+    color:#ee3643 ;
+}
+
+.modal-support{
+    width: 620px;
+    height: 430px;
+    background-color:#f4f4f4; 
+    font-size: 18px;
+    line-height: 18px;
+    color:#000000 ;
+    text-align: center;
+
+}
+
+.support-button-form{
+    width: 460px;
+    height: 38px;
+    
+    background-color:#ee3643 ;
+    color: #ffffff;
+    text-align: center ;
+    vertical-align: middle ; 
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
