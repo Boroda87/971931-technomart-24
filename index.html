@@ -4,42 +4,50 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет магазин «Техномарт»</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="111" height="18" class="logo" alt="логотип магазина Техномарт">
-    </a>
+  <header class="main-header"> 
+   <div class="main-header-top">   
+      <a class="main-header-logo" href="">
+      <img src="img/logo.svg" width="111" height="18" class="logo" alt="логотип магазина техномарт">
+   </a>
     <form class="main-search-form" action="https://echo.htmlacademy.ru" method="GET">
-      <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+      <input type="search" name="search" placeholder="Поиск:" aria-label="поиск по сайту">
     </form>
     <a class="bookmarks" href="#">
       Закладки:0</a>
     <a class="basket" href="#">
       Корзина:0</a>
-    <a class="to-order" href="#">Оформить заказ</a>
+    <a class="button-order" href="#">Оформить заказ</a>
+  </div>
+  <div class="main-header-contacts">
     <h1 class="shop-name">Интернет-магазин строительных материалов
-      и инструментов для дома</h1>
+      и инструментов для ремонта</h1>
     <address class="header-contacts">
       <a href="tel:+78125550555" aria-label="контактный телефон и адрес">+7(812)555-05-55</a>
-      г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8
+      <p>г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8</p>
     </address>
+    </div>
+    <div class="user-login">
     <ul class="user-navigation">
       <li><a class="login-link" href="#">
           Войти </a></li>
       <li><a class="registration-link" href="#">Регистрация
         </a></li>
     </ul>
+  </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li><a>Главная</a></li>
-        <li><a href="about-us.html">Компания</a></li>
+        <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="special-offer.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -172,7 +180,7 @@
   </p>
 </section>-->
     <section class="about-us">
-      <h2>Компания «Техномарт»</h2>
+      <h2 class="index-h2">Компания «Техномарт»</h2>
       <p>
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
         равнодушными любителей сэкономить на гастарбайтерах.
@@ -181,26 +189,23 @@
         Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:
       </p>
-      <ul class="logistics">
+      <ul class="logistics-list">
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
       <a class="button-about" href="about-us.html">Подробнее о компании</a>
-    </section>
-    <section class="contacts">
-      <h2>Контакты</h2>
+      <h2 class="index-h2">Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <a href="map.html"><img src="img/map.jpg" alt="офис находится по адресу улица большая конюшенная дом 19/8"></a>
-      <p><a class="button-lost" href="contact-us.html">
+      <a href="map.html"><img src="img/map.jpg" width="300px" height="158px" alt="офис находится по адресу улица большая конюшенная дом 19/8"></a>
+      <a class="button-lost" href="contact-us.html">
           Заблудились? Напишите нам.
         </a>
-      </p>
     </section>
   </main>
   <footer class="main-footer">
     <a class="main-footer-logo">
-      <img src="img/logo.svg" width="138" height="23" class="logo" alt="Техномарт">
+      <img src="img/logo.svg" width="138" height="23" class="logo" alt="техномарт">
     </a>
     <address class="footer-contacts">
       г.Санкт-Петербург,ул.Б.Конюшенная,д 19/8
@@ -227,13 +232,14 @@
       © 2010–2019 Компания «Техномарт»
       Все права защищены
     </p>
+    <section class="footer-bottom">
     <div class="footer-social">
-      <ul>
-          <li><a class="social-button" href="#" aria-label="Вконтакте">
+      <ul class="footer-social-list">
+          <li><a class="social-button" href="#" aria-label="вконтакте">
               Вконтакте</a></li>
-          <li><a class="social-button" href="#" aria-label="Фейсбук">
+          <li><a class="social-button" href="#" aria-label="фейсбук">
               Фейсбук</a></li>
-          <li><a class="social-button" href="#" aria-label="Инстаграм">
+          <li><a class="social-button" href="#" aria-label="инстаграм">
               Инстаграм</a></li>
       </ul>
     </div>
@@ -245,11 +251,12 @@
       Разработано-
       <a href="htmlacademy.ru">htmlacademy.ru</a>
     </p>
+    </section>
   </footer>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Где находимся</h2>
     <p>
-      <img src="img/map_modal.jpg" width="150" height="100" alt="офис находится по адресу улица большая конюшенная дом 19/8">
+      <img src="img/map_modal.jpg" width="940" height="446" alt="офис находится по адресу улица большая конюшенная дом 19/8">
     </p>
     <button class="modal-map-close" type="button">Закрыть
     </button>
