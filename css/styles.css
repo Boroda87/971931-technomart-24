@@ -27,7 +27,7 @@
 @font-face {
   font-family: "PTSans-Regular";
   src: url("../css/fonts/ptsans.woff") format("woff"),
-       url("../css/fonts/ptsans.woff2") format("woff2");
+    url("../css/fonts/ptsans.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -98,7 +98,7 @@ a {
 
 
 .shop-name {
-  font-family:"Cuprum-Italic" ;
+  font-family: "Cuprum-Italic";
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -138,18 +138,19 @@ address a {
   background-color: #32425c;
 }
 
-.logged-user a{
+.logged-user a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
-.user-navigation-logged a{
+.user-navigation-logged a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
-  text-decoration:underline ;
+  text-decoration: underline;
 }
+
 .items-list-perfo li,
 .breadcrumbs li,
 .filter-option,
@@ -164,65 +165,108 @@ address a {
   background-color: #32425c;
 
 }
- 
 
-.manufacturer-filter{
-  font-family:"PTSans-Regular" ;
+
+.manufacturer-filter {
+  font-family: "PTSans-Regular";
   font-size: 15px;
   line-height: 20px;
-  color:#000000;
-  text-transform:uppercase ;
+  color: #000000;
+  text-transform: uppercase;
   background-color: #ffffff;
 }
-.catalog-legend{
-  font-family:"PTSans-Bold"  ;
+
+.catalog-legend {
+  font-family: "PTSans-Bold";
   font-size: 17px;
   line-height: 30px;
-  text-transform:uppercase ;
+  text-transform: uppercase;
 }
 
-fieldset{
+fieldset {
   border: none;
 }
-.filter-button{
-    width: 140px;
-    height: 38px;
+
+.filter-button {
+  width: 140px;
+  height: 38px;
   font-size: 13px;
   line-height: 18px;
-  text-transform:uppercase ;
+  text-transform: uppercase;
 }
 
-.items-list-perfo p{
+.items-list-perfo p {
   font-style: "PTSans-Bold";
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 
-.items-list-perfo li{
+.items-list-perfo li {
   background-color: #ffffff;
   width: 220px;
   height: 318px;
 }
 
-.catalog-item{
-border: 1px solid #e5e5e5;
-border-style:inset ;
+.catalog-item {
+  border: 1px solid #e5e5e5;
+  border-style: inset;
 
 }
 
-.catalog-item del{
+.catalog-item del {
   color: #999999;
   font-size: 17px;
   line-height: 18px;
 
 }
 
-.catalog-item ins{
+.catalog-item ins {
   background-image: url("../img/btn-price.svg");
-  background-size: 141px 38px ;
+  background-size: 141px 38px;
 }
 
+.button-buy {
+  width: 135px;
+  height: 38px;
+  font-family: "Cuprum-Regular";
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 45px 12px 49px;
+  text-transform: uppercase;
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  border-radius: 5px;
+}
+
+.button-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.button-buy:active {
+  background-color: #518534;
+}
+
+.button-bookmarks {
+  font-family: "Cuprum-Regular";
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 32px 9px 36px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  border-style: inset;
+  color: #32425c;
+  border-radius: 5px;
+}
+
+.button-bookmarks:hover {
+  border: 3px solid #32425c;
+}
+
+.button-bookmarks:active {
+  opacity: 0.3;
+}
 
 .about-us {
   color: #000000;
@@ -332,7 +376,7 @@ border-style:inset ;
 }
 
 
-/* состояния */
+
 .user-navigation a:hover {
   color: #ee3643;
 }
